@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>えらんで｜お店のホームページ、5つのデザインから選ぶだけ。</title>
+<meta name="description" content="えらんでは、お店のホームページを"5つのデザインで完成品として"先にお作りし、気に入ったものを選ぶだけのサービス。初期9,800円・月額1,980円（更新無制限）。沼津の飲食店を中心に制作。">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#E8602C;--ink:#2B2B2B;--cream:#FFFDF8;--soft:#F7F3EB;--green:#2E9E6B;--muted:#7c756b;--line:#EDE6DA;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);background:var(--cream);line-height:1.9;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 6%;}
+.maru{font-family:'Zen Maru Gothic',sans-serif;}
+/* nav */
+nav{position:fixed;top:0;width:100%;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:.8rem 6%;background:rgba(255,253,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.logo{display:flex;align-items:center;gap:.5rem;}
+.logo .dots span{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:2px;}
+.logo .name{font-family:'Zen Maru Gothic';font-weight:900;font-size:1.3rem;}
+.logo .name b{color:var(--orange);}
+nav .links{display:flex;gap:1.6rem;align-items:center;font-size:.84rem;font-weight:500;}
+nav .links a:hover{color:var(--orange);}
+nav .cta{background:var(--orange);color:#fff;padding:.5rem 1.2rem;border-radius:999px;font-weight:700;}
+@media(max-width:760px){nav .links a:not(.cta){display:none;}}
+/* hero */
+.hero{padding:8rem 6% 4rem;text-align:center;background:radial-gradient(60% 80% at 50% 0%,#fff6ee, var(--cream));}
+.hero .dots{margin-bottom:1.2rem;}
+.hero .dots span{display:inline-block;width:14px;height:14px;border-radius:50%;margin:0 4px;}
+.hero h1{font-family:'Zen Maru Gothic';font-weight:900;font-size:clamp(1.9rem,5vw,3.1rem);line-height:1.5;letter-spacing:.02em;}
+.hero h1 .o{color:var(--orange);}
+.hero p.lead{margin-top:1.2rem;font-size:1.05rem;color:#5a5347;max-width:34rem;margin-left:auto;margin-right:auto;}
+.hero .btns{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn{display:inline-block;padding:1rem 2.2rem;border-radius:999px;font-weight:700;font-family:'Zen Maru Gothic';}
+.btn-main{background:var(--orange);color:#fff;box-shadow:0 8px 20px rgba(232,96,44,.28);}
+.btn-main:hover{transform:translateY(-2px);}
+.btn-ghost{border:2px solid var(--ink);}
+.btn-ghost:hover{background:var(--ink);color:#fff;}
+.price-chip{display:inline-block;margin-top:1.6rem;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.5rem 1.3rem;font-size:.9rem;font-weight:700;}
+.price-chip b{color:var(--orange);}
+/* sections */
+section{padding:4.5rem 0;}
+.sec-tag{text-align:center;color:var(--orange);font-weight:700;letter-spacing:.2em;font-size:.78rem;}
+.sec-t{font-family:'Zen Maru Gothic';font-weight:900;text-align:center;font-size:1.9rem;margin:.4rem 0 2.5rem;}
+/* 課題 */
+.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+.pain{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.6rem;text-align:center;}
+.pain .face{font-size:1.8rem;}
+.pain h3{font-family:'Zen Maru Gothic';font-size:1.05rem;margin:.5rem 0;}
+.pain p{font-size:.85rem;color:var(--muted);}
+@media(max-width:760px){.pains{grid-template-columns:1fr;}}
+/* 特徴 */
+.feats{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;}
+.feat{background:#fff;border-radius:18px;padding:1.8rem;border:1px solid var(--line);display:flex;gap:1rem;}
+.feat .num{font-family:'Zen Maru Gothic';font-weight:900;color:#fff;background:var(--orange);width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex:none;}
+.feat h3{font-family:'Zen Maru Gothic';font-size:1.15rem;margin-bottom:.4rem;}
+.feat p{font-size:.9rem;color:#5a5347;}
+@media(max-width:760px){.feats{grid-template-columns:1fr;}}
+/* 流れ */
+.flow{background:var(--soft);}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.step{background:#fff;border-radius:16px;padding:1.5rem 1.2rem;text-align:center;position:relative;}
+.step .s{font-family:'Zen Maru Gothic';color:var(--orange);font-weight:900;font-size:1.4rem;}
+.step h3{font-family:'Zen Maru Gothic';font-size:1rem;margin:.4rem 0;}
+.step p{font-size:.82rem;color:var(--muted);}
+@media(max-width:760px){.steps{grid-template-columns:1fr 1fr;}}
+/* 料金 */
+.price{text-align:center;}
+.price-card{max-width:460px;margin:0 auto;background:#fff;border:2px solid var(--orange);border-radius:24px;padding:2.4rem 2rem;box-shadow:0 14px 40px rgba(232,96,44,.12);}
+.price-card .pn{font-family:'Zen Maru Gothic';font-weight:900;font-size:1.2rem;}
+.price-row{display:flex;justify-content:center;align-items:baseline;gap:.5rem;margin:1rem 0;}
+.price-row .big{font-family:'Zen Maru Gothic';font-weight:900;font-size:3rem;color:var(--orange);}
+.price-card ul{list-style:none;text-align:left;max-width:300px;margin:1.4rem auto 0;}
+.price-card li{padding:.4rem 0 .4rem 1.8rem;position:relative;font-size:.92rem;}
+.price-card li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900;}
+.price-note{font-size:.8rem;color:var(--muted);margin-top:1.2rem;}
+.compare{max-width:560px;margin:2rem auto 0;font-size:.86rem;color:#5a5347;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem;}
+.compare b{color:var(--orange);}
+/* 実績 */
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+.work{display:block;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,border-color .2s;}
+.work:hover{transform:translateY(-4px);border-color:var(--orange);}
+.work .bar{height:8px;}
+.work .b{padding:1.2rem 1.3rem;}
+.work .cat{font-size:.66rem;font-weight:700;letter-spacing:.15em;color:var(--orange);}
+.work .nm{font-family:'Zen Maru Gothic';font-weight:700;font-size:1.05rem;margin:.3rem 0;}
+.work .lk{font-size:.8rem;color:var(--muted);}
+@media(max-width:760px){.works{grid-template-columns:1fr;}}
+/* FAQ */
+.faq{max-width:740px;margin:0 auto;}
+.qa{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:.9rem;}
+.qa .q{font-family:'Zen Maru Gothic';font-weight:700;}
+.qa .q::before{content:"Q ";color:var(--orange);}
+.qa .a{font-size:.9rem;color:#5a5347;margin-top:.5rem;}
+.qa .a::before{content:"A ";color:var(--green);font-weight:700;}
+/* CTA */
+.cta-sec{background:var(--ink);color:#fff;text-align:center;}
+.cta-sec h2{font-family:'Zen Maru Gothic';font-weight:900;font-size:1.9rem;margin-bottom:.8rem;}
+.cta-sec p{opacity:.8;margin-bottom:1.8rem;}
+.cta-sec .btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-line{background:#06C755;color:#fff;}
+.btn-mail{background:var(--orange);color:#fff;}
+footer{background:#1c1c1c;color:#bbb;padding:2.4rem 6%;font-size:.82rem;text-align:center;}
+footer .fl{font-family:'Zen Maru Gothic';font-weight:900;color:#fff;font-size:1.2rem;margin-bottom:.5rem;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s;}
+.reveal.visible{opacity:1;transform:none;}
+.delay-1{transition-delay:.1s;}.delay-2{transition-delay:.2s;}.delay-3{transition-delay:.3s;}.delay-4{transition-delay:.4s;}
+.dot1{background:#E8602C;}.dot2{background:#F2B233;}.dot3{background:#5DAE7B;}.dot4{background:#3E8FB0;}.dot5{background:#C0566E;}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#top" class="logo">
+    <span class="dots"><span class="dot1"></span><span class="dot2"></span><span class="dot3"></span><span class="dot4"></span><span class="dot5"></span></span>
+    <span class="name">えらんで<b>.</b></span>
+  </a>
+  <div class="links">
+    <a href="#feature">特徴</a><a href="#designs">5デザイン</a><a href="#flow">ながれ</a><a href="#price">料金</a><a href="#works">制作実績</a>
+    <a href="#contact" class="cta">お問い合わせ</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="dots"><span class="dot1"></span><span class="dot2"></span><span class="dot3"></span><span class="dot4"></span><span class="dot5"></span></div>
+  <h1>お店のホームページ、<br><span class="o">5つのデザイン</span>から えらんで。</h1>
+  <p class="lead">「作りたいけど、時間も知識もない」——そんなお店のために。<br>先に"完成品"を5パターンお作りします。あなたは見て、選ぶだけ。</p>
+  <div class="btns">
+    <a href="#works" class="btn btn-main">制作例を見てみる</a>
+    <a href="#contact" class="btn btn-ghost">無料で相談する</a>
+  </div>
+  <div class="price-chip">初期 <b>9,800円</b> ／ 月額 <b>1,980円</b>（更新ずっと無制限）</div>
+</header>
+
+<!-- 課題 -->
+<section class="wrap">
+  <div class="sec-tag">こんなお悩み、ありませんか？</div>
+  <h2 class="sec-t maru">ホームページ、気になるけど…</h2>
+  <div class="pains">
+    <div class="pain reveal"><div class="face">😵</div><h3>作る時間がない</h3><p>毎日の営業で手一杯。パソコンも得意じゃない。</p></div>
+    <div class="pain reveal"><div class="face">💸</div><h3>費用が高そう</h3><p>制作会社は何十万円…と聞いて、二の足を踏んでしまう。</p></div>
+    <div class="pain reveal"><div class="face">🤔</div><h3>業者選びが不安</h3><p>頼んでみないと、どんな仕上がりか分からないのが怖い。</p></div>
+  </div>
+</section>
+
+<!-- 特徴 -->
+<section class="wrap" id="feature">
+  <div class="sec-tag">えらんでの特徴</div>
+  <h2 class="sec-t maru">"完成品"を先に見せます。選ぶだけ。</h2>
+  <div class="feats">
+    <div class="feat reveal"><div class="num">1</div><div><h3>5デザインを先にお作り</h3><p>ご依頼前に、御社のホームページを5つのデザインで完成品としてご用意。見てから選べるので失敗しません。</p></div></div>
+    <div class="feat reveal"><div class="num">2</div><div><h3>複数ページの本格HP</h3><p>トップ・お品書き・お店紹介・アクセスの複数ページ構成。スマホでも見やすく、電話・地図・予約導線つき。</p></div></div>
+    <div class="feat reveal"><div class="num">3</div><div><h3>更新は"丸投げ"でOK</h3><p>メニュー変更・写真差し替え・営業時間の修正…月額に更新無制限が込み。あなたは連絡するだけ。</p></div></div>
+    <div class="feat reveal"><div class="num">4</div><div><h3>AI活用だから低価格</h3><p>最新のAIで制作を効率化し、制作会社の約3分の1の月額を実現。安いのに、ちゃんと作り込みます。</p></div></div>
+  </div>
+</section>
+
+<!-- 選べる5デザイン -->
+<style>
+.designs{display:grid;grid-template-columns:repeat(5,1fr);gap:.9rem;}
+@media(max-width:760px){.designs{grid-template-columns:1fr 1fr;}}
+.dcard{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.05);transition:transform .2s;}
+.dcard:hover{transform:translateY(-5px);}
+.dcard .bar{height:16px;display:flex;align-items:center;gap:3px;padding:0 7px;background:#ececec;}
+.dcard .bar i{width:5px;height:5px;border-radius:50%;background:#c8c8c8;}
+.mock{padding:11px;height:128px;}
+.mock .h{height:9px;border-radius:3px;width:62%;margin-bottom:7px;}
+.mock .l{height:5px;border-radius:3px;margin-bottom:5px;}
+.mock .btn{height:11px;width:42%;border-radius:6px;margin-top:8px;}
+.dlabel{text-align:center;font-family:'Zen Maru Gothic';font-weight:700;font-size:.84rem;padding:.55rem;border-top:1px solid var(--line);}
+</style>
+<section class="wrap" id="designs">
+  <div class="sec-tag">選べる5デザイン</div>
+  <h2 class="sec-t maru">同じお店でも、5つの"顔"。</h2>
+  <p style="text-align:center;color:#5a5347;max-width:34rem;margin:0 auto 2.2rem;">和モダン・ポップ・ミニマルなど、雰囲気の違う5つの<b>完成デザイン</b>を先にご用意。御社に一番似合う"顔"を、見て えらんでください。</p>
+  <div class="designs">
+    <div class="dcard reveal"><div class="bar"><i></i><i></i><i></i></div><div class="mock" style="background:#FBF8F2;"><div class="h" style="background:#C0392B;"></div><div class="l" style="background:rgba(0,0,0,.13);"></div><div class="l" style="background:rgba(0,0,0,.10);width:80%;"></div><div class="btn" style="background:#C0392B;"></div></div><div class="dlabel">和モダン</div></div>
+    <div class="dcard reveal delay-1"><div class="bar"><i></i><i></i><i></i></div><div class="mock" style="background:#fff;"><div class="h" style="background:#E8602C;"></div><div class="l" style="background:rgba(0,0,0,.12);"></div><div class="l" style="background:rgba(0,0,0,.10);width:75%;"></div><div class="btn" style="background:#F2B233;"></div></div><div class="dlabel">ポップ</div></div>
+    <div class="dcard reveal delay-2"><div class="bar"><i></i><i></i><i></i></div><div class="mock" style="background:#FAF8F4;"><div class="h" style="background:#2B2B2B;"></div><div class="l" style="background:rgba(0,0,0,.10);"></div><div class="l" style="background:rgba(0,0,0,.08);width:70%;"></div><div class="btn" style="background:#2B2B2B;"></div></div><div class="dlabel">ミニマル</div></div>
+    <div class="dcard reveal delay-3"><div class="bar"><i></i><i></i><i></i></div><div class="mock" style="background:#1A1410;"><div class="h" style="background:#C9A24B;"></div><div class="l" style="background:rgba(255,255,255,.18);"></div><div class="l" style="background:rgba(255,255,255,.13);width:72%;"></div><div class="btn" style="background:#C9A24B;"></div></div><div class="dlabel">上質ダーク</div></div>
+    <div class="dcard reveal delay-4"><div class="bar"><i></i><i></i><i></i></div><div class="mock" style="background:#F4F1E8;"><div class="h" style="background:#6E7F5B;"></div><div class="l" style="background:rgba(0,0,0,.11);"></div><div class="l" style="background:rgba(0,0,0,.09);width:78%;"></div><div class="btn" style="background:#6E7F5B;"></div></div><div class="dlabel">ナチュラル</div></div>
+  </div>
+  <p style="text-align:center;margin-top:2rem;"><a href="#contact" class="btn btn-main">うちのお店の5デザインを見てみる</a></p>
+</section>
+
+<!-- 流れ -->
+<section class="flow"><div class="wrap" id="flow">
+  <div class="sec-tag">ご利用のながれ</div>
+  <h2 class="sec-t maru">見て、選んで、すぐ公開。</h2>
+  <div class="steps">
+    <div class="step reveal"><div class="s">01</div><h3>5デザインをお届け</h3><p>御社専用のデモを5パターン無料でご覧いただきます。</p></div>
+    <div class="step reveal"><div class="s">02</div><h3>気に入ったら選ぶ</h3><p>お好きな1つを選択。気に入らなければ費用は一切不要。</p></div>
+    <div class="step reveal"><div class="s">03</div><h3>写真を差し替え・公開</h3><p>御社の実際のお写真に差し替えて、本番公開します。</p></div>
+    <div class="step reveal"><div class="s">04</div><h3>更新はおまかせ</h3><p>以降の修正はご連絡いただくだけ。無制限で対応します。</p></div>
+  </div>
+</div></section>
+
+<!-- 料金 -->
+<section class="wrap price" id="price">
+  <div class="sec-tag">料金</div>
+  <h2 class="sec-t maru">わかりやすい、ワンプラン。</h2>
+  <div class="price-card reveal">
+    <div class="pn">ホームページ制作・運用</div>
+    <div class="price-row"><span>初期</span><span class="big">9,800</span><span>円</span></div>
+    <div class="price-row"><span>月額</span><span class="big">1,980</span><span>円</span></div>
+    <ul>
+      <li>5デザインから選べる完成品提案</li>
+      <li>複数ページの本格HP・スマホ対応</li>
+      <li>更新無制限（メニュー・写真・営業時間など）</li>
+      <li>電話・地図・LINE等の集客導線つき</li>
+      <li>気に入らなければ費用は0円</li>
+    </ul>
+    <p class="price-note">※価格は税込。ページ追加・大幅リニューアルは別途ご相談。</p>
+  </div>
+  <div class="compare reveal">一般的なホームページ制作会社は <b>初期3〜30万円＋月5,000〜8,000円</b>、更新は都度追加費用が相場。<br><b>えらんで</b>なら初期9,800円・月1,980円で、更新も込み。AI活用で実現した価格です。</div>
+</section>
+
+<!-- 実績 -->
+<section class="wrap" id="works">
+  <div class="sec-tag">制作実績</div>
+  <h2 class="sec-t maru">導入いただいたお店。</h2>
+  <div class="works" style="grid-template-columns:minmax(280px,360px);justify-content:center;">
+    <a class="work reveal" href="https://yorimichi.beebloom.fun/" target="_blank"><div class="bar" style="background:#3E3A39;"></div><div class="b"><div class="cat">ポーカールーム</div><div class="nm">YORIMICHI（沼津）</div><div class="lk">ホームページを見る →</div></div></a>
+  </div>
+  <p style="text-align:center;color:var(--muted);font-size:.84rem;margin-top:1.4rem;">導入店舗は順次掲載してまいります。</p>
+</section>
+
+<!-- FAQ -->
+<section class="flow"><div class="wrap" id="faq">
+  <div class="sec-tag">よくあるご質問</div>
+  <h2 class="sec-t maru">FAQ</h2>
+  <div class="faq">
+    <div class="qa reveal"><div class="q">本当に初期9,800円・月1,980円だけですか？</div><div class="a">はい。ページ追加や大幅リニューアルなど特別なご要望以外は、この料金だけです。更新も無制限で込みです。</div></div>
+    <div class="qa reveal"><div class="q">パソコンが苦手でも大丈夫？</div><div class="a">大丈夫です。更新は「ここを変えて」とご連絡いただくだけ。こちらで対応します。</div></div>
+    <div class="qa reveal"><div class="q">気に入らなかったら？</div><div class="a">費用は一切かかりません。完成品を見て、納得いただいてからのご契約です。</div></div>
+    <div class="qa reveal"><div class="q">写真がないのですが…</div><div class="a">まずはサンプル写真でご提案します。ご契約後、御社の実際のお写真に差し替えます。撮影のご相談も可能です。</div></div>
+  </div>
+</div></section>
+
+<!-- CTA -->
+<section class="cta-sec" id="contact"><div class="wrap">
+  <h2 class="maru">まずは、御社のデモを無料で。</h2>
+  <p>「うちのお店も見てみたい」——お気軽にご連絡ください。<br>5つのデザインを無料でお作りしてお見せします。</p>
+  <div class="btns">
+    <a href="mailto:erande.hp@gmail.com?subject=えらんで%20お問い合わせ" class="btn btn-mail">メールで相談する</a>
+    <a href="#" class="btn btn-line">LINEで相談する</a>
+  </div>
+  <p style="margin-top:1.4rem;font-size:.78rem;opacity:.6;">erande.hp@gmail.com（受付：太田）</p>
+</div></section>
+
+<footer>
+  <div class="fl">えらんで<span style="color:#E8602C;">.</span></div>
+  <p>お店のホームページ、5つのデザインから選ぶだけ。</p>
+  <p style="margin-top:.8rem;opacity:.6;">運営：えらんで（個人事業）／ 担当：太田 清人<br>お問い合わせ：erande.hp@gmail.com</p>
+  <p style="margin-top:1rem;opacity:.4;font-size:.72rem;">© えらんで. All rights reserved.</p>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
