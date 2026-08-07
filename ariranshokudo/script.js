@@ -18,6 +18,19 @@
         burger.setAttribute("aria-expanded", "false");
       });
     });
+
+    /* #4 ESCキー / 外側クリックで閉じる */
+    function closeMenu() {
+      links.classList.remove("open");
+      burger.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    }
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && links.classList.contains("open")) { closeMenu(); burger.focus(); }
+    });
+    document.addEventListener("click", function (e) {
+      if (links.classList.contains("open") && !links.contains(e.target) && !burger.contains(e.target)) { closeMenu(); }
+    });
   }
 
   /* ---- reveal (IntersectionObserver / スタガー対応) ---- */

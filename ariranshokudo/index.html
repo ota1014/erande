@@ -34,6 +34,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Restaurant", "@id": "https://erande.net/ariranshokudo/#restaurant", "name": "アリラン食堂", "alternateName": ["Arirang Shokudo", "아리랑 식당", "ariranshokudo"], "description": "沼津・大手町の韓国家庭料理と焼肉の食堂「アリラン食堂」。スンドゥブチゲ・キムチチゲ・カムジャタン・ブデチゲ・参鶏湯などのチゲ、サムギョプサル・ポッサム、石焼ビビンバ・冷麺・ジャージャー麺、海鮮チヂミ・トッポッキまで、本場の家庭の味を気軽に。沼津駅南口から徒歩7分、上本通交差点の黄色い壁の建物。", "servesCuisine": ["韓国料理", "Korean", "焼肉"], "priceRange": "¥1000〜¥3000", "url": "https://erande.net/ariranshokudo/", "telephone": "+81-55-951-5170", "image": ["https://erande.net/ariranshokudo/img/samgyeopsal.jpg", "https://erande.net/ariranshokudo/img/chijimi.jpg", "https://erande.net/ariranshokudo/img/sundubu.jpg"], "hasMap": "https://www.google.com/maps?q=%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E5%A4%A7%E6%89%8B%E7%94%BA4-8-1", "address": {"@type": "PostalAddress", "streetAddress": "大手町4-8-1", "addressLocality": "沼津市", "addressRegion": "静岡県", "postalCode": "410-0801", "addressCountry": "JP"}, "geo": {"@type": "GeoCoordinates", "latitude": 35.0992, "longitude": 138.8588}, "currenciesAccepted": "JPY", "paymentAccepted": "現金, PayPay", "acceptsReservations": "True", "sameAs": ["https://www.instagram.com/ariranshokudo/"], "hasMenu": "https://erande.net/ariranshokudo/menu.html", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "17:00", "closes": "23:00", "name": "ディナー"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday", "Friday", "Saturday"], "opens": "11:30", "closes": "13:30", "name": "ランチ"}]}, {"@type": "WebSite", "@id": "https://erande.net/ariranshokudo/#website", "url": "https://erande.net/ariranshokudo/", "name": "アリラン食堂", "inLanguage": "ja", "publisher": {"@id": "https://erande.net/ariranshokudo/#restaurant"}}, {"@type": "WebPage", "@id": "https://erande.net/ariranshokudo/#webpage", "url": "https://erande.net/ariranshokudo/", "name": "アリラン食堂｜沼津・大手町の本場韓国料理・焼肉", "isPartOf": {"@id": "https://erande.net/ariranshokudo/#website"}, "about": {"@id": "https://erande.net/ariranshokudo/#restaurant"}, "inLanguage": "ja", "description": "沼津・大手町の韓国家庭料理と焼肉「アリラン食堂」。スンドゥブチゲ・キムチチゲ・サムギョプサル・海鮮チヂミなど本場の味。沼津駅南口徒歩7分・上本通交差点の黄色い壁の建物。ディナー17:00-23:00／ランチ木金土／定休水曜。"}]}</script>
 </head>
 <body>
+<a href="#main" class="skip-link">本文へスキップ</a>
 
 <!-- ============ NAV ============ -->
 <header class="nav">
@@ -54,7 +55,7 @@
 </header>
 
 <!-- ============ HERO ============ -->
-<section class="hero">
+<section class="hero" id="main">
   <div class="wrap">
     <div class="hero-grid">
       <span class="hero-kicker reveal">NUMAZU · OTEMACHI</span>
@@ -63,7 +64,7 @@
         <small>KOREAN HOME KITCHEN 아리랑</small>
       </h1>
       <div class="hero-photo reveal delay-2">
-        <img src="img/yakiniku.jpg" alt="鉄板で焼く焼肉・ホルモン">
+        <img src="img/yakiniku.jpg" alt="鉄板で焼く焼肉・ホルモン" fetchpriority="high">
         <span class="tag">沼津・大手町</span>
       </div>
       <div class="hero-lower reveal delay-2">
@@ -104,7 +105,7 @@
   <div class="wrap">
     <div class="think-grid">
       <div class="think-photo reveal">
-        <img src="img/interior.jpg" alt="アリラン食堂の店内">
+        <img loading="lazy" decoding="async" src="img/interior.jpg" alt="アリラン食堂の店内">
       </div>
       <div class="think-body reveal delay-1">
         <span class="sec-en">OUR STORY</span>
@@ -127,7 +128,7 @@
     </div>
     <div class="feat-grid">
       <article class="feat-card reveal">
-        <img src="img/samgyeopsal.jpg" alt="サムギョプサル">
+        <img loading="lazy" decoding="async" src="img/samgyeopsal.jpg" alt="サムギョプサル">
         <div class="body">
           <span class="ko">삼겹살</span>
           <h3>サムギョプサル</h3>
@@ -135,7 +136,7 @@
         </div>
       </article>
       <article class="feat-card reveal delay-1">
-        <img src="img/bulgogi.jpg" alt="プルコギ">
+        <img loading="lazy" decoding="async" src="img/bulgogi.jpg" alt="プルコギ">
         <div class="body">
           <span class="ko">불고기</span>
           <h3>プルコギ</h3>
@@ -143,7 +144,7 @@
         </div>
       </article>
       <article class="feat-card reveal delay-2">
-        <img src="img/chijimi.jpg" alt="海鮮チヂミ">
+        <img loading="lazy" decoding="async" src="img/chijimi.jpg" alt="海鮮チヂミ">
         <div class="body">
           <span class="ko">해물파전</span>
           <h3>海鮮チヂミ</h3>
@@ -160,12 +161,12 @@
 <!-- ============ 予約CTA ============ -->
 <section class="cta">
   <div class="wrap">
-    <h2 class="reveal">まずはお電話、<br><span class="accent">またはLINEで。</span></h2>
+    <h2 class="reveal">まずはお電話、<br><span class="accent">またはInstagramで。</span></h2>
     <p class="reveal delay-1">ご予約・お問合せはお気軽に。少人数から宴会まで承ります。</p>
     <div class="tel reveal delay-1">TEL 055-951-5170</div>
     <div class="btns reveal delay-2">
       <a href="tel:055-951-5170" class="btn btn-red">電話でご予約</a>
-      <a href="#" class="btn btn-line">LINEでお問合せ</a>
+      <a href="https://www.instagram.com/ariranshokudo/" target="_blank" rel="noopener" class="btn btn-ig">Instagramで見る</a>
     </div>
   </div>
 </section>

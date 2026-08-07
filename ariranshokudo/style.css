@@ -434,3 +434,19 @@ ul{list-style:none}
 .footer-bottom{border-top:1px solid rgba(243,231,206,.2);margin-top:44px;padding-top:22px;
   text-align:center;font-size:.82rem;color:rgba(243,231,206,.6)}
 @media (max-width:860px){.footer-grid{grid-template-columns:1fr;gap:30px}}
+
+
+/* ===== a11y & 追加スタイル (tickets #2/#5/#6 + Instagram) ===== */
+/* #2 キーボードフォーカス表示 */
+a:focus-visible,.btn:focus-visible,.hamburger:focus-visible,.nav-links a:focus-visible{
+  outline:2px solid var(--red);outline-offset:3px;border-radius:2px;
+}
+/* #5 スキップリンク */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:2000;background:var(--ink);color:var(--cream);
+  padding:12px 20px;font-weight:700;border-radius:0 0 4px 0;}
+.skip-link:focus{left:12px;top:12px;outline:2px solid var(--mustard);outline-offset:2px;}
+/* Instagramボタン(LINE代替) */
+.btn-ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:#fff;border:none;}
+.btn-ig:hover{filter:brightness(1.08);}
+/* #6 ヒーロータグの見切れ防止(狭幅) */
+@media (max-width:860px){.hero-photo .tag{left:8px;}}
