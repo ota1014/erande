@@ -40,9 +40,9 @@ a{color:inherit;text-decoration:none}
 /* ---- page hero (下層ページ用) ---- */
 .phead{position:relative;padding:150px 0 70px;text-align:center;overflow:hidden}
 .phead::before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.38) saturate(1.05)}
-.phead.h-menu::before{background-image:url('img/chijimi.jpg')}
-.phead.h-about::before{background-image:url('img/interior.jpg')}
-.phead.h-access::before{background-image:url('img/gaikan.jpg')}
+.phead.h-menu::before{background-image:url('../img/chijimi.jpg')}
+.phead.h-about::before{background-image:url('../img/interior.jpg')}
+.phead.h-access::before{background-image:url('../img/gaikan.jpg')}
 .phead::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.5),rgba(20,16,12,.9))}
 .phead .inner{position:relative;z-index:2}
 .phead .ko{color:var(--gold);letter-spacing:.35em;font-size:.85rem;margin-bottom:12px}

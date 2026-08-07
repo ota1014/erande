@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アリラン食堂｜沼津・大手町の本場韓国料理・焼肉</title>
+<meta name="description" content="沼津・大手町の韓国食堂「アリラン食堂」。鉄板のサムギョプサル、香ばしい海鮮チヂミ、甘辛いプルコギ。地元に愛される本場の家庭料理をどうぞ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ---- home hero ---- */
+.hero{height:100vh;min-height:620px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;background:url('../img/yakiniku.jpg') center/cover;filter:brightness(.42) saturate(1.1)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.4),rgba(20,16,12,.15) 45%,rgba(20,16,12,.95))}
+.hero-c{position:relative;z-index:2;padding:0 24px}
+.hero .ko{color:var(--gold);letter-spacing:.4em;font-size:.95rem;margin-bottom:18px}
+.hero h1{font-weight:900;font-size:clamp(2.5rem,8vw,5rem);letter-spacing:.04em;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.hero p.sub{margin-top:22px;font-size:clamp(1rem,2.4vw,1.28rem);font-weight:500}
+.hero .cta{margin-top:40px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* ---- about split ---- */
+.abt{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.abt p{margin-bottom:16px}
+.abt .imgcol img{border-radius:4px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+/* ---- signature 3 (ジグザグ) ---- */
+.sig{display:flex;flex-direction:column;gap:26px;margin-top:52px}
+.sigrow{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--bg);border-radius:6px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.sigrow:nth-child(even) .sig-im{order:2}
+.sig-im{min-height:280px;background-size:cover;background-position:center}
+.sig-tx{padding:40px 44px;display:flex;flex-direction:column;justify-content:center}
+.sig-tx .ko{color:var(--gold);letter-spacing:.2em;font-size:.72rem;font-weight:500;margin-bottom:8px}
+.sig-tx h3{font-weight:900;font-size:1.5rem;margin-bottom:10px}
+.sig-tx p{color:var(--muted);font-size:.96rem}
+/* ---- interior strip ---- */
+.strip{height:56vh;min-height:380px;background:url('../img/interior2.jpg') center/cover fixed;position:relative}
+.strip::after{content:"";position:absolute;inset:0;background:rgba(20,16,12,.35)}
+@media(max-width:860px){
+  .abt{grid-template-columns:1fr;gap:34px}
+  .sigrow{grid-template-columns:1fr}
+  .sigrow:nth-child(even) .sig-im{order:0}
+  .sig-im{min-height:220px}
+  .strip{background-attachment:scroll}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navin">
+    <a href="index.html" class="brand"><span class="jp">アリラン食堂</span><span class="ko en">ARIRANG</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html" class="current">ホーム</a>
+      <a href="menu.html">お品書き</a>
+      <a href="about.html">こだわり</a>
+      <a href="access.html">アクセス</a>
+      <a href="access.html#reserve" class="navbtn">ご予約</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-c">
+    <div class="ko en">SINCE THE OLD DAYS ・ NUMAZU OTEMACHI</div>
+    <h1>沼津で味わう、<br><span class="ac">本場</span>の韓の食卓。</h1>
+    <p class="sub">大手町の交差点角、鉄板の音とアリランの唄。<br>地元に愛される韓国食堂です。</p>
+    <div class="cta">
+      <a href="menu.html" class="btn">お品書きを見る</a>
+      <a href="access.html#reserve" class="btn ghost">ご予約・お問合せ</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div><span>サムギョプサル</span><span>海鮮チヂミ</span><span>プルコギ</span><span>キンパ</span><span>ナムル盛り合わせ</span><span>ディナー 17:00-23:00</span><span>ランチ 木金土 11:30-13:30</span><span>沼津駅南口 徒歩7分</span><span>サムギョプサル</span><span>海鮮チヂミ</span><span>プルコギ</span><span>キンパ</span><span>ナムル盛り合わせ</span><span>ディナー 17:00-23:00</span><span>ランチ 木金土 11:30-13:30</span><span>沼津駅南口 徒歩7分</span></div>
+</div>
+
+<section class="band wrap">
+  <div class="abt">
+    <div class="reveal">
+      <div class="eyeb en">OUR STORY</div>
+      <h2 class="ttl"><span class="sub-en">THE TASTE OF HOME</span>ふるさとの味を、<br>この街で。</h2>
+      <p class="lead">「アリラン」は、韓国で最も親しまれる民謡の名。峠を越えた先に広がる、あたたかな故郷を唄ったものです。</p>
+      <p>私たちが目指すのは、飾らない家庭の味。鉄板でジュッと焼くサムギョプサル、香ばしい海鮮チヂミ、たっぷりのナムル。韓国のお母さんの台所を、そのまま沼津・大手町へ持ってきました。</p>
+      <p><a href="about.html" class="gd" style="font-weight:700">こだわりを詳しく見る →</a></p>
+    </div>
+    <div class="imgcol reveal delay-2"><img src="../img/interior.jpg" alt="アリラン食堂の店内"></div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyeb en">SIGNATURE</div>
+      <h2 class="ttl"><span class="sub-en">SIGNATURE DISHES</span>アリランの名物</h2>
+      <p class="lead">まず食べていただきたい、看板の三品。写真はすべて実際のお料理です。</p>
+    </div>
+    <div class="sig">
+      <div class="sigrow reveal">
+        <div class="sig-im" style="background-image:url('../img/chijimi.jpg')"></div>
+        <div class="sig-tx"><div class="ko">해물파전</div><h3>海鮮チヂミ</h3><p>魚介とニラをたっぷり。外はカリッと、中はもっちり。まずはこの一枚から、韓国の食卓が始まります。</p></div>
+      </div>
+      <div class="sigrow reveal">
+        <div class="sig-im" style="background-image:url('../img/samgyeopsal.jpg')"></div>
+        <div class="sig-tx"><div class="ko">삼겹살</div><h3>サムギョプサル</h3><p>豚バラを鉄板でじゅうっと。玉ねぎ・キムチと一緒に焼いて、サンチュで巻いて頬張る。鉄板を囲む楽しさを、ぜひ。</p></div>
+      </div>
+      <div class="sigrow reveal">
+        <div class="sig-im" style="background-image:url('../img/bulgogi.jpg')"></div>
+        <div class="sig-tx"><div class="ko">불고기</div><h3>プルコギ</h3><p>牛肉と野菜を甘辛く仕立てた、みんな大好きな一皿。ごはんが止まらない、やさしい味わいです。</p></div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:40px" class="reveal"><a href="menu.html" class="btn">お品書きをすべて見る</a></p>
+  </div>
+</section>
+
+<div class="strip" role="img" aria-label="アリラン食堂の店内"></div>
+
+<section class="reserve" id="reserve">
+  <div class="wrap reveal">
+    <div class="eyeb en" style="color:#fff">RESERVATION</div>
+    <h2 class="ttl">ご予約・お問合せ</h2>
+    <p>お席のご予約、宴会のご相談、テイクアウトはお電話で。<br>沼津駅南口から徒歩7分、上本通交差点の角、黄色い壁の建物が目印です。</p>
+    <div class="rbtns">
+      <a href="tel:055-951-5170" class="rbtn tel">☎ 055-951-5170</a>
+      <a href="#" class="rbtn line">LINEでお問合せ</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="jp">アリラン食堂</span><span class="ko en">ARIRANG</span></a>
+    <nav><a href="index.html">ホーム</a><a href="menu.html">お品書き</a><a href="about.html">こだわり</a><a href="access.html">アクセス</a></nav>
+    <div class="fmeta">〒410-0801 静岡県沼津市大手町4-8-1<br>TEL 055-951-5170／ディナー 17:00〜23:00（ランチ 木・金・土 11:30〜13:30）／定休 水曜</div>
+    <div style="margin:16px 0 4px"><a href="https://www.instagram.com/ariranshokudo/" target="_blank" rel="noopener" style="font-weight:700">Instagram ＠ariranshokudo</a></div>
+    <div class="copy">© アリラン食堂 沼津・大手町 ／ 韓国料理・焼肉</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
