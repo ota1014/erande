@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アリラン食堂｜沼津大手町の韓国食堂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F3E7CE; --paper:#EFE2C4; --ink:#211A12; --red:#B5271E; --mustard:#C98A1E; --green:#3C5A3A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;background:var(--cream);color:var(--ink);line-height:1.85}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.mincho{font-family:"Shippori Mincho",serif}
+.en{font-family:"Bebas Neue",sans-serif;letter-spacing:.05em;line-height:1}
+/* nav */
+nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:3px solid var(--ink)}
+.navin{display:flex;align-items:center;justify-content:space-between;padding:14px 26px;max-width:1180px;margin:0 auto}
+.logo .jp{font-family:"Shippori Mincho",serif;font-weight:800;font-size:1.6rem;letter-spacing:.1em}
+.logo .ko{color:var(--red);font-size:.72rem;letter-spacing:.3em;display:block;margin-top:2px}
+.navlinks{display:flex;gap:26px;align-items:center}
+.navlinks a{font-size:.9rem;font-weight:700}
+.navbtn{background:var(--red);color:var(--cream)!important;padding:9px 18px}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:26px;height:2px;background:var(--ink)}
+/* hero magazine grid */
+.hero{padding:46px 0 20px}
+.hgrid{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:auto auto;gap:22px}
+.hmain{grid-row:1/3;position:relative;border:3px solid var(--ink);overflow:hidden;min-height:460px}
+.hmain img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.hmain .tag{position:absolute;top:0;left:0;background:var(--red);color:var(--cream);font-weight:700;padding:8px 18px;letter-spacing:.15em;font-size:.8rem;z-index:2}
+.htitle{align-self:end}
+.htitle .ko{color:var(--red);letter-spacing:.3em;font-weight:700;font-size:.85rem;margin-bottom:10px}
+.htitle h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(2.4rem,6vw,4rem);line-height:1.15;letter-spacing:.02em}
+.htitle h1 em{color:var(--red);font-style:normal}
+.hsub{background:var(--ink);color:var(--cream);padding:26px 26px;align-self:start}
+.hsub p{font-size:.98rem;line-height:1.9}
+.hsub .btn{display:inline-block;margin-top:16px;background:var(--mustard);color:var(--ink);font-weight:700;padding:12px 26px}
+/* strip / ticker */
+.ticker{background:var(--ink);color:var(--cream);overflow:hidden;white-space:nowrap;padding:11px 0;margin-top:26px}
+.ticker div{display:inline-block;animation:scr 28s linear infinite;font-weight:700;letter-spacing:.12em;font-size:.92rem}
+.ticker span{margin:0 24px}
+.ticker span::before{content:"❋";color:var(--mustard);margin-right:24px}
+@keyframes scr{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* section */
+.band{padding:88px 0}
+.eyeb{font-family:"Bebas Neue",sans-serif;font-size:2.4rem;color:var(--red);letter-spacing:.04em;line-height:.9}
+.eyeb small{display:block;font-family:"Noto Sans JP";font-size:.8rem;color:var(--ink);letter-spacing:.3em;font-weight:700;margin-top:6px}
+h2.ttl{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(1.8rem,5vw,2.7rem);margin:8px 0 20px}
+/* about asymmetric */
+.about{background:var(--paper)}
+.agrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:0;border:3px solid var(--ink)}
+.agrid .txt{padding:44px 38px;background:var(--cream)}
+.agrid .txt p{margin-bottom:16px}
+.agrid .im{background-size:cover;background-position:center;min-height:340px}
+.agrid .im.g1{background-image:url('img/gaikan.jpg')}
+.aband{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.aband .cell{border:3px solid var(--ink);background:var(--cream);padding:26px;position:relative}
+.aband .cell .n{font-family:"Bebas Neue";font-size:2.2rem;color:var(--red);line-height:1}
+.aband .cell h4{font-family:"Shippori Mincho",serif;font-weight:700;font-size:1.15rem;margin:6px 0 8px}
+.aband .cell p{font-size:.9rem}
+/* menu magazine mixed grid */
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:16px;margin-top:44px}
+.mtile{border:3px solid var(--ink);overflow:hidden;position:relative}
+.mtile img{width:100%;height:100%;object-fit:cover}
+.mtile .lab{position:absolute;left:0;bottom:0;width:100%;background:rgba(33,26,18,.9);color:var(--cream);padding:12px 16px}
+.mtile .lab h4{font-family:"Shippori Mincho",serif;font-weight:700;font-size:1.05rem}
+.mtile .lab span{color:var(--mustard);font-size:.72rem;letter-spacing:.15em}
+.mtile.big{grid-column:span 2;grid-row:span 2}
+.mtile.wide{grid-column:span 2}
+.mnote{border:3px solid var(--ink);background:var(--mustard);color:var(--ink);padding:20px 24px;grid-column:span 2;display:flex;flex-direction:column;justify-content:center}
+.mnote strong{font-family:"Shippori Mincho",serif;font-size:1.2rem}
+.mnote p{font-size:.85rem;margin-top:6px}
+/* reserve */
+.reserve{background:var(--red);color:var(--cream);padding:80px 0;text-align:center}
+.reserve h2{font-family:"Shippori Mincho",serif;font-size:clamp(1.7rem,5vw,2.5rem);margin-bottom:14px}
+.reserve p{margin-bottom:34px}
+.rbtns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.rbtn{display:inline-flex;align-items:center;gap:9px;padding:16px 32px;font-weight:700;font-size:1.05rem;border:2px solid var(--cream)}
+.rbtn.tel{background:var(--cream);color:var(--red)}
+.rbtn.line{background:#06C755;color:#fff;border-color:#06C755}
+/* info */
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:3px solid var(--ink);margin-top:44px}
+.itbl{width:100%;border-collapse:collapse;background:var(--cream)}
+.itbl th,.itbl td{text-align:left;padding:15px 20px;border-bottom:1px solid rgba(33,26,18,.18);font-size:.93rem;vertical-align:top}
+.itbl th{color:var(--red);width:32%;font-weight:700}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+/* footer */
+footer{background:var(--ink);color:var(--cream);padding:56px 0 36px;text-align:center}
+footer .jp{font-family:"Shippori Mincho",serif;font-size:1.5rem;font-weight:800;letter-spacing:.1em}
+footer .fmeta{font-size:.9rem;line-height:2;margin-top:16px;color:#d8ccb6}
+footer .copy{margin-top:22px;font-size:.78rem;color:#8a7c66}
+.plan-badge{position:fixed;right:16px;bottom:16px;z-index:200;background:var(--ink);color:var(--mustard);font-weight:700;font-size:.72rem;letter-spacing:.06em;padding:8px 14px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.visible{opacity:1;transform:none}
+.delay-1{transition-delay:.12s}.delay-2{transition-delay:.24s}.delay-3{transition-delay:.36s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.ticker div{animation:none}}
+@media(max-width:860px){
+  .navlinks{display:none}.burger{display:flex}
+  .navlinks.open{display:flex;position:absolute;top:100%;right:0;flex-direction:column;background:var(--cream);border:3px solid var(--ink);padding:20px 26px;gap:16px}
+  .hgrid{grid-template-columns:1fr}.hmain{grid-row:auto;min-height:320px}
+  .agrid,.igrid{grid-template-columns:1fr}
+  .aband{grid-template-columns:1fr}
+  .mgrid{grid-template-columns:repeat(2,1fr)}
+  .mtile.big,.mtile.wide,.mnote{grid-column:span 2;grid-row:auto}
+  .mtile.big{grid-row:span 1}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="navin">
+    <a href="#top" class="logo"><span class="jp">アリラン食堂</span><span class="ko en">ARIRANG ・ NUMAZU OTEMACHI</span></a>
+    <div class="navlinks" id="navlinks">
+      <a href="#about">こだわり</a>
+      <a href="#menu">お品書き</a>
+      <a href="#info">店舗情報</a>
+      <a href="#reserve" class="navbtn">ご予約</a>
+    </div>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <div class="hgrid">
+    <div class="hmain"><span class="tag">沼津・大手町</span><img src="img/yakiniku.jpg" alt="鉄板で焼く韓国焼肉"></div>
+    <div class="htitle">
+      <div class="ko">아리랑 식당 ・ 韓国家庭料理</div>
+      <h1>交差点の角に、<br><em>本場の味</em>あり。</h1>
+    </div>
+    <div class="hsub">
+      <p>沼津仲見世商店街のほど近く。昔ながらの韓国食堂で、鉄板のサムギョプサル、香ばしいチヂミ、ごはんが進むプルコギを。地元に長く愛されてきた、飾らない一軒です。</p>
+      <a href="#menu" class="btn">お品書きを見る</a>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div><span>サムギョプサル</span><span>海鮮チヂミ</span><span>プルコギ</span><span>キンパ</span><span>ナムル</span><span>わかめスープ</span><span>営業 17:00-23:00</span><span>ランチ 火〜木 11:30-13:30</span><span>沼津駅南口 徒歩7分</span><span>サムギョプサル</span><span>海鮮チヂミ</span><span>プルコギ</span><span>キンパ</span><span>ナムル</span><span>わかめスープ</span><span>営業 17:00-23:00</span><span>ランチ 火〜木 11:30-13:30</span><span>沼津駅南口 徒歩7分</span></div>
+</div>
+
+<section class="band about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyeb en">STORY<small>アリランの由来</small></div>
+      <h2 class="ttl">峠を越えた先の、故郷の食卓。</h2>
+    </div>
+    <div class="agrid reveal">
+      <div class="txt">
+        <p>「アリラン」は、韓国で最も親しまれる民謡の名。峠を越えた向こうに広がる、あたたかな故郷を唄ったものです。</p>
+        <p>その名のとおり、私たちが出すのは家庭のごはん。おふくろの手が作る、素朴で力強い韓国の味を、沼津・大手町で長く続けてきました。</p>
+        <p>赤い看板が目印。仕事帰りにふらりと、ご家族の夕食に、気の合う仲間と一杯に。どうぞ気取らずに。</p>
+      </div>
+      <div class="im g1" role="img" aria-label="アリラン食堂の外観"></div>
+    </div>
+    <div class="aband">
+      <div class="cell reveal"><div class="n">01</div><h4>本場の家庭料理</h4><p>チヂミもプルコギもナムルも、韓国のお母さんの味そのまま。</p></div>
+      <div class="cell reveal delay-1"><div class="n">02</div><h4>鉄板を囲む楽しさ</h4><p>じゅうっと焼くサムギョプサル。テーブルの真ん中に会話が生まれる。</p></div>
+      <div class="cell reveal delay-2"><div class="n">03</div><h4>駅近・気軽に</h4><p>沼津駅南口から徒歩7分。ランチもディナーも普段づかいで。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band wrap" id="menu">
+  <div class="reveal">
+    <div class="eyeb en">MENU<small>お品書き</small></div>
+    <h2 class="ttl">鉄板、煮込み、ごはんもの。</h2>
+  </div>
+  <div class="mgrid reveal">
+    <div class="mtile big"><img src="img/chijimi.jpg" alt="海鮮チヂミ"><div class="lab"><span>해물파전</span><h4>海鮮チヂミ</h4></div></div>
+    <div class="mtile"><img src="img/samgyeopsal.jpg" alt="サムギョプサル"><div class="lab"><span>삼겹살</span><h4>サムギョプサル</h4></div></div>
+    <div class="mtile"><img src="img/bulgogi.jpg" alt="プルコギ"><div class="lab"><span>불고기</span><h4>プルコギ</h4></div></div>
+    <div class="mtile wide"><img src="img/teishoku.jpg" alt="プルコギ定食"><div class="lab"><span>런치 세트</span><h4>プルコギ定食（ランチ）</h4></div></div>
+    <div class="mtile"><img src="img/kimbap.jpg" alt="キンパ"><div class="lab"><span>김밥</span><h4>キンパ</h4></div></div>
+    <div class="mtile"><img src="img/namul.jpg" alt="ナムル"><div class="lab"><span>나물</span><h4>ナムル盛り</h4></div></div>
+    <div class="mnote"><strong>ご予算の目安</strong><p>ランチ 〜2,000円／ディナー 〜3,000円。写真は実際のお料理です。価格は季節により変わります、詳しくは店頭にて。</p></div>
+    <div class="mtile wide"><img src="img/soup.jpg" alt="わかめスープとナムル"><div class="lab"><span>미역국</span><h4>わかめスープ・小鉢</h4></div></div>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+  <div class="wrap reveal">
+    <h2>ご予約・お問合せ</h2>
+    <p>お席のご予約、宴会のご相談、テイクアウトはお電話で。<br>赤い看板が目印、交差点の角でお待ちしています。</p>
+    <div class="rbtns">
+      <a href="tel:055-951-5170" class="rbtn tel">☎ 055-951-5170</a>
+      <a href="#" class="rbtn line">LINEでお問合せ</a>
+    </div>
+  </div>
+</section>
+
+<section class="band wrap" id="info">
+  <div class="reveal">
+    <div class="eyeb en">ACCESS<small>店舗情報</small></div>
+    <h2 class="ttl">沼津市大手町4-8-1</h2>
+  </div>
+  <div class="igrid reveal">
+    <table class="itbl">
+      <tr><th>店名</th><td>アリラン食堂（ありらん しょくどう）</td></tr>
+      <tr><th>ジャンル</th><td>韓国料理・焼肉</td></tr>
+      <tr><th>住所</th><td>〒410-0801 静岡県沼津市大手町4-8-1</td></tr>
+      <tr><th>電話</th><td><a href="tel:055-951-5170" style="color:var(--red);font-weight:700">055-951-5170</a></td></tr>
+      <tr><th>営業時間</th><td>月〜土 17:00〜23:00／ランチ 火〜木 11:30〜13:30</td></tr>
+      <tr><th>定休日</th><td>日曜・祝日</td></tr>
+      <tr><th>アクセス</th><td>JR沼津駅 南口より徒歩約7分</td></tr>
+      <tr><th>お支払い</th><td>現金／PayPay</td></tr>
+    </table>
+    <div class="map"><iframe src="https://www.google.com/maps?q=%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E5%A4%A7%E6%89%8B%E7%94%BA4-8-1&output=embed" allowfullscreen loading="lazy" title="アリラン食堂の地図"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="jp">アリラン食堂</div>
+    <div class="fmeta">〒410-0801 静岡県沼津市大手町4-8-1<br>TEL 055-951-5170／月〜土 17:00〜23:00（ランチ 火〜木 11:30〜13:30）／定休 日曜・祝日</div>
+    <div class="copy">© アリラン食堂 沼津・大手町 ／ 韓国料理・焼肉</div>
+  </div>
+</footer>
+
+<div class="plan-badge">PATTERN 2 — 大手町の韓国食堂（MAGAZINE）</div>
+
+<script>
+document.getElementById('burger').onclick=()=>document.getElementById('navlinks').classList.toggle('open');
+document.querySelectorAll('#navlinks a').forEach(a=>a.onclick=()=>document.getElementById('navlinks').classList.remove('open'));
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
