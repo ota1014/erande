@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お品書き｜アリラン食堂（沼津・大手町の韓国料理）</title>
+<meta name="description" content="アリラン食堂のお品書き。サムギョプサル・焼肉、プルコギ、海鮮チヂミ、キンパ、ナムル、わかめスープなど本場韓国料理。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.mcat{margin-top:64px}
+.mcat:first-of-type{margin-top:40px}
+.mcat-h{display:flex;align-items:baseline;gap:16px;padding-bottom:14px;border-bottom:2px solid var(--line);margin-bottom:30px}
+.mcat-h .en{color:var(--gold);font-size:1.7rem}
+.mcat-h h2{font-weight:900;font-size:1.5rem;letter-spacing:.03em}
+.mcat-h .ko{color:var(--muted);font-size:.78rem;letter-spacing:.15em;margin-left:auto}
+.mitems{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.mi{display:flex;gap:18px;background:var(--bg2);border-radius:6px;overflow:hidden;transition:transform .3s}
+.mi:hover{transform:translateY(-4px)}
+.mi .th{width:120px;flex:0 0 120px;background-size:cover;background-position:center}
+.mi .tx{padding:18px 18px 18px 4px}
+.mi .tx h3{font-weight:700;font-size:1.12rem;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.mi .tx h3 .ko{color:var(--gold);font-size:.66rem;font-weight:500;letter-spacing:.13em}
+.mi .tx p{color:var(--muted);font-size:.86rem;margin-top:5px}
+.mi.noimg{padding:18px 20px}
+.mnote{margin-top:56px;background:var(--bg2);border-left:4px solid var(--gold);padding:24px 28px;border-radius:0 6px 6px 0}
+.mnote strong{color:var(--gold);font-size:1.05rem}
+.mnote p{color:var(--muted);font-size:.92rem;margin-top:8px}
+@media(max-width:600px){.mi .th{width:96px;flex:0 0 96px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navin">
+    <a href="index.html" class="brand"><span class="jp">アリラン食堂</span><span class="ko en">ARIRANG</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html">ホーム</a>
+      <a href="menu.html" class="current">お品書き</a>
+      <a href="about.html">こだわり</a>
+      <a href="access.html">アクセス</a>
+      <a href="access.html#reserve" class="navbtn">ご予約</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section class="phead h-menu">
+  <div class="inner">
+    <div class="ko en">MENU</div>
+    <h1>お品書き</h1>
+    <p>鉄板・煮込み・ごはんもの。韓国家庭料理をひととおり。</p>
+  </div>
+  <div class="crumb"><a href="index.html">ホーム</a> ／ お品書き</div>
+</section>
+
+<main class="band wrap" style="padding-top:70px">
+
+  <div class="mcat reveal">
+    <div class="mcat-h"><span class="en">01</span><h2>鉄板・焼肉</h2><span class="ko">고기구이</span></div>
+    <div class="mitems">
+      <div class="mi"><div class="th" style="background-image:url('img/samgyeopsal.jpg')"></div><div class="tx"><h3>サムギョプサル<span class="ko">삼겹살</span></h3><p>豚バラを鉄板で。玉ねぎ・キムチと、サンチュで巻いて。</p></div></div>
+      <div class="mi"><div class="th" style="background-image:url('img/yakiniku.jpg')"></div><div class="tx"><h3>焼肉・ホルモン<span class="ko">모둠구이</span></h3><p>鉄板でじっくり。ビールにもマッコリにも合う定番。</p></div></div>
+    </div>
+  </div>
+
+  <div class="mcat reveal">
+    <div class="mcat-h"><span class="en">02</span><h2>煮込み・炒め</h2><span class="ko">볶음</span></div>
+    <div class="mitems">
+      <div class="mi"><div class="th" style="background-image:url('img/bulgogi.jpg')"></div><div class="tx"><h3>プルコギ<span class="ko">불고기</span></h3><p>牛肉と野菜を甘辛く。ごはんが進む、みんな大好きな一皿。</p></div></div>
+      <div class="mi"><div class="th" style="background-image:url('img/sanchae.jpg')"></div><div class="tx"><h3>季節の野菜炒め<span class="ko">나물볶음</span></h3><p>山菜や季節の野菜を、韓国の家庭の味付けで香ばしく。</p></div></div>
+    </div>
+  </div>
+
+  <div class="mcat reveal">
+    <div class="mcat-h"><span class="en">03</span><h2>粉もの・ごはん</h2><span class="ko">전 · 밥</span></div>
+    <div class="mitems">
+      <div class="mi"><div class="th" style="background-image:url('img/chijimi.jpg')"></div><div class="tx"><h3>海鮮チヂミ<span class="ko">해물파전</span></h3><p>魚介とニラをたっぷり。外はカリッ、中はもっちり。</p></div></div>
+      <div class="mi"><div class="th" style="background-image:url('img/kimbap.jpg')"></div><div class="tx"><h3>キンパ<span class="ko">김밥</span></h3><p>彩り豊かな韓国風のり巻き。テイクアウトにも。</p></div></div>
+      <div class="mi"><div class="th" style="background-image:url('img/teishoku.jpg')"></div><div class="tx"><h3>プルコギ定食<span class="ko">런치 세트</span></h3><p>ランチ限定。ごはん・スープ・ナムル付きのお得な定食。</p></div></div>
+    </div>
+  </div>
+
+  <div class="mcat reveal">
+    <div class="mcat-h"><span class="en">04</span><h2>小鉢・汁物</h2><span class="ko">반찬 · 국</span></div>
+    <div class="mitems">
+      <div class="mi"><div class="th" style="background-image:url('img/namul.jpg')"></div><div class="tx"><h3>ナムル盛り合わせ<span class="ko">나물</span></h3><p>季節の野菜を数種。やさしい味の小鉢たち。</p></div></div>
+      <div class="mi"><div class="th" style="background-image:url('img/soup.jpg')"></div><div class="tx"><h3>わかめスープ<span class="ko">미역국</span></h3><p>じんわり沁みる、やさしい一杯。</p></div></div>
+      <div class="mi noimg"><div class="tx"><h3>キムチ・各種<span class="ko">김치</span></h3><p>白菜キムチ、カクテキなど。箸休めにどうぞ。</p></div></div>
+    </div>
+  </div>
+
+  <div class="mnote reveal">
+    <strong>ご予算の目安</strong>
+    <p>ランチ 〜2,000円／ディナー 〜3,000円。掲載写真はすべて実際のお料理です。品書き・価格は季節や仕入れにより変わります。詳しくは店頭、またはお電話にてお気軽におたずねください。</p>
+  </div>
+
+  <p style="text-align:center;margin-top:48px" class="reveal"><a href="access.html#reserve" class="btn">ご予約・お問合せ</a></p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="jp">アリラン食堂</span><span class="ko en">ARIRANG</span></a>
+    <nav><a href="index.html">ホーム</a><a href="menu.html">お品書き</a><a href="about.html">こだわり</a><a href="access.html">アクセス</a></nav>
+    <div class="fmeta">〒410-0801 静岡県沼津市大手町4-8-1<br>TEL 055-951-5170／月〜土 17:00〜23:00（ランチ 火〜木 11:30〜13:30）／定休 日曜・祝日</div>
+    <div class="copy">© アリラン食堂 沼津・大手町 ／ 韓国料理・焼肉</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

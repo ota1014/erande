@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アクセス・ご予約｜アリラン食堂（沼津・大手町）</title>
+<meta name="description" content="アリラン食堂へのアクセス・ご予約。沼津市大手町4-8-1、JR沼津駅南口より徒歩約7分。営業時間・定休日・お問合せはこちら。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.acc{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.itbl{width:100%;border-collapse:collapse}
+.itbl th,.itbl td{text-align:left;padding:16px 8px;border-bottom:1px solid var(--line);font-size:.96rem;vertical-align:top}
+.itbl th{color:var(--gold);width:32%;font-weight:700}
+.map iframe{width:100%;height:100%;min-height:400px;border:0;border-radius:6px;filter:grayscale(.15)}
+.hours{background:var(--bg2);border-radius:6px;padding:30px 32px;margin-top:40px}
+.hours h3{font-weight:900;font-size:1.15rem;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.hours h3::before{content:"";width:10px;height:10px;background:var(--accent);border-radius:50%}
+.hours .row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.hours .row:last-child{border-bottom:0}
+.hours .row .d{color:var(--muted)}
+.reserve-inline{background:linear-gradient(135deg,var(--indigo),#0c2246);border-radius:8px;padding:44px 34px;margin-top:44px;text-align:center}
+.reserve-inline h3{font-weight:900;font-size:1.5rem;margin-bottom:10px}
+.reserve-inline p{color:#cdd8ea;margin-bottom:28px}
+@media(max-width:860px){.acc{grid-template-columns:1fr;gap:34px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navin">
+    <a href="index.html" class="brand"><span class="jp">アリラン食堂</span><span class="ko en">ARIRANG</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html">ホーム</a>
+      <a href="menu.html">お品書き</a>
+      <a href="about.html">こだわり</a>
+      <a href="access.html" class="current">アクセス</a>
+      <a href="#reserve" class="navbtn">ご予約</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section class="phead h-access">
+  <div class="inner">
+    <div class="ko en">ACCESS</div>
+    <h1>アクセス・ご予約</h1>
+    <p>沼津駅南口より徒歩7分、交差点の角の赤い看板が目印です。</p>
+  </div>
+  <div class="crumb"><a href="index.html">ホーム</a> ／ アクセス</div>
+</section>
+
+<main class="band wrap" style="padding-top:74px">
+  <div class="acc">
+    <div class="reveal">
+      <div class="eyeb en">INFORMATION</div>
+      <h2 class="ttl" style="font-size:clamp(1.5rem,4vw,2.1rem)">店舗情報</h2>
+      <table class="itbl">
+        <tr><th>店名</th><td>アリラン食堂（ありらん しょくどう）</td></tr>
+        <tr><th>ジャンル</th><td>韓国料理・焼肉</td></tr>
+        <tr><th>住所</th><td>〒410-0801<br>静岡県沼津市大手町4-8-1</td></tr>
+        <tr><th>電話</th><td><a href="tel:055-951-5170" class="gd" style="font-weight:700">055-951-5170</a></td></tr>
+        <tr><th>アクセス</th><td>JR沼津駅 南口より徒歩約7分<br>沼津仲見世商店街ほど近く</td></tr>
+        <tr><th>お支払い</th><td>現金／PayPay</td></tr>
+      </table>
+
+      <div class="hours">
+        <h3>営業時間</h3>
+        <div class="row"><span class="d">ディナー（月〜土）</span><span>17:00 〜 23:00</span></div>
+        <div class="row"><span class="d">ランチ（火〜木）</span><span>11:30 〜 13:30</span></div>
+        <div class="row"><span class="d">定休日</span><span>日曜・祝日</span></div>
+      </div>
+    </div>
+
+    <div class="map reveal delay-1">
+      <iframe src="https://www.google.com/maps?q=%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E5%A4%A7%E6%89%8B%E7%94%BA4-8-1&output=embed" allowfullscreen loading="lazy" title="アリラン食堂の地図"></iframe>
+    </div>
+  </div>
+
+  <div class="reserve-inline reveal" id="reserve">
+    <div class="eyeb en" style="color:#fff">RESERVATION</div>
+    <h3>ご予約・お問合せ</h3>
+    <p>お席のご予約、宴会のご相談、テイクアウトはお電話で承ります。</p>
+    <div class="rbtns">
+      <a href="tel:055-951-5170" class="rbtn tel">☎ 055-951-5170</a>
+      <a href="#" class="rbtn line">LINEでお問合せ</a>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="jp">アリラン食堂</span><span class="ko en">ARIRANG</span></a>
+    <nav><a href="index.html">ホーム</a><a href="menu.html">お品書き</a><a href="about.html">こだわり</a><a href="access.html">アクセス</a></nav>
+    <div class="fmeta">〒410-0801 静岡県沼津市大手町4-8-1<br>TEL 055-951-5170／月〜土 17:00〜23:00（ランチ 火〜木 11:30〜13:30）／定休 日曜・祝日</div>
+    <div class="copy">© アリラン食堂 沼津・大手町 ／ 韓国料理・焼肉</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
