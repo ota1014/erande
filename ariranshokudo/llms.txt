@@ -1,0 +1,30 @@
+# アリラン食堂 (Arirang Shokudo)
+
+> 沼津・大手町の韓国家庭料理と焼肉の食堂。本場の家庭の味を気軽に楽しめる地元の店。
+
+## 基本情報
+- 店名: アリラン食堂 (ありらん しょくどう / Arirang Shokudo / 아리랑 식당)
+- ジャンル: 韓国料理・焼肉・韓国家庭料理
+- 住所: 〒410-0801 静岡県沼津市大手町4-8-1
+- 目印: JR沼津駅 南口より徒歩約7分、上本通交差点の角、黄色い壁の建物。沼津仲見世商店街ほど近く
+- 電話: 055-951-5170
+- 営業時間: ディナー 17:00-23:00 ／ ランチ 木・金・土 11:30-13:30 ／ 定休日 水曜
+- 支払い: 現金、PayPay
+- 予算: ランチ 〜2,000円、ディナー 〜3,000円
+- Instagram: https://www.instagram.com/ariranshokudo/
+- 公式サイト: https://erande.net/ariranshokudo/
+
+## 人気メニュー(一部・税込)
+- スンドゥブチゲ ¥1200（辛口 ¥1500）
+- キムチチゲ ¥1800 / カムジャタン ¥2500 / ブデチゲ ¥2500 / キムチチム ¥3000
+- 参鶏湯 ¥1500 / ユッケジャン ¥1500
+- サムギョプサル ¥1500（2人前より）/ ポッサム ¥2000（要予約）
+- 石焼ビビンバ ¥1500 / ビビンバ ¥1200 / 冷麺 ¥1500 / ジャージャー麺 ¥1000
+- 海鮮チヂミ ¥1500 / トッポッキ ¥1300 / チーズトッポッキ ¥2000
+- 機械可読メニュー(JSON): https://erande.net/ariranshokudo/menu.json
+
+## ページ
+- ホーム: https://erande.net/ariranshokudo/
+- お品書き: https://erande.net/ariranshokudo/menu.html
+- こだわり: https://erande.net/ariranshokudo/about.html
+- アクセス・ご予約: https://erande.net/ariranshokudo/access.html
