@@ -1,0 +1,20 @@
+# アリラン食堂（ありらん しょくどう）
+
+> 沼津・大手町の韓国食堂「アリラン食堂」。鉄板のサムギョプサル、香ばしい海鮮チヂミ、甘辛いプルコギ。地元に愛される本場の家庭料理をどうぞ。
+
+※このページはえらんで（HP制作代行）が作成したデザイン見本です。写真は見本用のもので、内容は公開情報をもとにしています。最新の情報は店舗へご確認ください。
+
+## 基本情報
+- 店名: アリラン食堂（ありらん しょくどう）
+- ジャンル: 韓国料理・焼肉
+- 住所: 〒410-0801
+- 電話: 055-951-5170
+- 営業時間: ディナー
+- 定休日: 水曜
+
+## ページ
+- デザイン5パターンの一覧: https://erande.net/demos/arirang-premium/
+- ホーム: https://erande.net/demos/arirang-premium/pattern1/
+- お品書き: https://erande.net/demos/arirang-premium/pattern1/menu.html
+- こだわり: https://erande.net/demos/arirang-premium/pattern1/about.html
+- アクセス・ご予約: https://erande.net/demos/arirang-premium/pattern1/access.html

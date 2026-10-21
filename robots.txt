@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erande.net/sitemap.xml
+Sitemap: https://erande.net/ariranshokudo/sitemap.xml

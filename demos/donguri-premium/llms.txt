@@ -1,0 +1,19 @@
+# 甘味処 どんぐり
+
+> 1976年創業、沼津仲見世の甘味処どんぐり。たる舟で甘味が届くリバーカウンターが名物。
+
+※このページはえらんで（HP制作代行）が作成したデザイン見本です。写真は見本用のもので、内容は公開情報をもとにしています。最新の情報は店舗へご確認ください。
+
+## 基本情報
+- 店名: 甘味処 どんぐり
+- 住所: 静岡県沼津市大手町5-8-22（沼津仲見世商店街）
+- 電話: 055-951-1777
+- 営業時間: 11:00〜19:00
+- 定休日: 水・木曜
+
+## ページ
+- デザイン5パターンの一覧: https://erande.net/demos/donguri-premium/
+- ホーム: https://erande.net/demos/donguri-premium/pattern1/
+- お品書き: https://erande.net/demos/donguri-premium/pattern1/menu.html
+- こだわり: https://erande.net/demos/donguri-premium/pattern1/about.html
+- アクセス・ご予約: https://erande.net/demos/donguri-premium/pattern1/access.html

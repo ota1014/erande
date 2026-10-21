@@ -1,0 +1,30 @@
+# Shop&Restaurant Createur
+
+> 国産食材と食の安全にこだわる、伊東・荻の予約制レストラン。
+
+※このページはえらんで（HP制作代行）が作成したデザイン見本です。写真は見本用のもので、内容は公開情報をもとにしています。最新の情報は店舗へご確認ください。
+
+## 基本情報
+- 店名: Shop&Restaurant Createur
+- ジャンル: 洋食レストラン・スイーツ
+- エリア: 伊東・荻
+- 住所: 静岡県伊東市荻556-1 ロワジール伊豆一碧B1
+- 電話: 090-9304-5005
+- 営業時間: ランチ 11:30〜14:00／ディナー 17:00〜21:00（L.O.20:30）予約制
+- 定休日: 月・火・水は不定休（予約営業）
+
+## お店について
+2016年、伊東市荻のロワジール伊豆一碧に開いた『Shop&Restaurant Createur』。東京・自由が丘で積んだ20年の経験をもとに、国産食材と食の安全にこだわり、地元の食材を中心にした料理とスイーツを提供しています。和牛ビーフシチューや特製シュークリームなど、食事から甘いものまで。ご予約は前日20時までにお電話で。
+
+## おすすめ
+- 和牛ビーフシチュー：じっくり煮込んだ看板の一皿。
+- 和牛ハンバーグ 温野菜添え：温野菜とともに。
+- 漁師風海鮮スパゲッティ：海の幸をたっぷり。
+- 特製シュークリーム：カスタード、生クリーム、チョコレート、抹茶。
+
+## ページ
+- デザイン5パターンの一覧: https://erande.net/demos/createur-ito-premium/
+- ホーム: https://erande.net/demos/createur-ito-premium/pattern1/
+- お品書き: https://erande.net/demos/createur-ito-premium/pattern1/menu.html
+- こだわり: https://erande.net/demos/createur-ito-premium/pattern1/about.html
+- アクセス・ご予約: https://erande.net/demos/createur-ito-premium/pattern1/access.html

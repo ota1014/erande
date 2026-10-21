@@ -1,0 +1,19 @@
+# Creperie cafe Ferme
+
+> 沼津・平町のクレープリーカフェ「Ferme」。県内では希少なそば粉のガレット専門店。
+
+※このページはえらんで（HP制作代行）が作成したデザイン見本です。写真は見本用のもので、内容は公開情報をもとにしています。最新の情報は店舗へご確認ください。
+
+## 基本情報
+- 店名: Creperie cafe Ferme
+- 住所: 静岡県沼津市平町7-30 青木ビル1F
+- 電話: 055-956-0879
+- 営業時間: 10:00〜15:00／17:00〜20:00
+- 定休日: 月曜・第2日曜（不定休あり）
+
+## ページ
+- デザイン5パターンの一覧: https://erande.net/demos/ferme-premium/
+- ホーム: https://erande.net/demos/ferme-premium/pattern1/
+- お品書き: https://erande.net/demos/ferme-premium/pattern1/menu.html
+- こだわり: https://erande.net/demos/ferme-premium/pattern1/about.html
+- アクセス・ご予約: https://erande.net/demos/ferme-premium/pattern1/access.html

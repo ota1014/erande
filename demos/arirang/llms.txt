@@ -1,0 +1,16 @@
+# HPデザイン5パターン提案
+
+> 
+
+※このページはえらんで（HP制作代行）が作成したデザイン見本です。写真は見本用のもので、内容は公開情報をもとにしています。最新の情報は店舗へご確認ください。
+
+## 基本情報
+- 店名: HPデザイン5パターン提案
+
+## ページ
+- 一覧: https://erande.net/demos/arirang/
+- デザイン1: https://erande.net/demos/arirang/pattern1.html
+- デザイン2: https://erande.net/demos/arirang/pattern2.html
+- デザイン3: https://erande.net/demos/arirang/pattern3.html
+- デザイン4: https://erande.net/demos/arirang/pattern4.html
+- デザイン5: https://erande.net/demos/arirang/pattern5.html
